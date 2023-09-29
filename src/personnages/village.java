@@ -29,4 +29,10 @@ public class Village {
 	public String getNom() {
 		return nom;
 	}
+
+	public static void main(String[] args) {
+		Village village = new Village("Village des Irréductibles", 30);
+	}
 }
+//Gaulois gaulois = village.trouverHabitant(30);
+//l'indice 30 n'est pas definir (0-29)
