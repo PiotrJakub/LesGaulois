@@ -21,6 +21,7 @@ public class Village {
 		villageois[nbVillageois] = gaulois;
 		nbVillageois++;
 	}
+
 	public Gaulois trouverHabitant(int numeroVillageois) {
 		return villageois[numeroVillageois];
 	}
