@@ -6,6 +6,16 @@ public class Village {
 	private Gaulois[] villageois;
 	private int nbVillageois;
 
+	public void afficherVillageois() {
+		// Affiche le nom du chef
+		System.out.println("Chef du village : " + chef.getNom());
+
+		// Affiche les noms des villageois
+		System.out.println("Villageois : ");
+		for (int i = 0; i < nbVillageois; i++) {
+		}
+	}
+
 	public Village(String nom, int nbVillageoisMaximum) {
 		this.nom = nom;
 		villageois = new Gaulois[nbVillageoisMaximum];
@@ -32,6 +42,10 @@ public class Village {
 
 	public static void main(String[] args) {
 		Village village = new Village("Village des Irréductibles", 30);
+		Gaulois obelix = new Gaulois("Obelix", 25);
+		village.ajouterHabitant(obelix);
+
+		village.afficherVillageois();
 	}
 }
 //Gaulois gaulois = village.trouverHabitant(30);
